@@ -1,0 +1,134 @@
+.contact__grid {
+  margin-top: 44px;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 40px;
+}
+
+@media (max-width: 860px) {
+  .contact__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 32px;
+}
+
+.contact-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  background: var(--void);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 12px 14px;
+  color: var(--text-primary);
+  resize: vertical;
+  transition: border-color 0.2s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--cyan);
+  outline: none;
+}
+
+.contact-form__submit {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.contact-form__submit:disabled {
+  opacity: 0.6;
+  cursor: progress;
+}
+
+.contact-form__status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.contact-form__status--ok {
+  color: var(--cyan);
+}
+
+.contact-form__status--error {
+  color: var(--magenta);
+}
+
+.contact-form__hint {
+  font-size: 0.76rem;
+  color: var(--text-faint);
+  margin: 0;
+}
+
+.contact-channels {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contact-channel {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 20px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  color: var(--text-primary);
+  background: var(--panel);
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  transition: border-color 0.2s, transform 0.2s, color 0.2s;
+}
+
+.contact-channel:hover {
+  border-color: var(--cyan);
+  color: var(--cyan);
+  transform: translateX(4px);
+}
+
+.btn {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  padding: 13px 26px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s, background 0.2s;
+}
+
+.btn--primary {
+  background: linear-gradient(120deg, var(--cyan), var(--violet));
+  color: #05060b;
+  font-weight: 600;
+}
+
+.btn--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px -8px rgba(139, 124, 246, 0.55);
+}

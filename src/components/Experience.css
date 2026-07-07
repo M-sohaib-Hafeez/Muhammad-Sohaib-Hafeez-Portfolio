@@ -1,0 +1,153 @@
+.timeline {
+  margin-top: 44px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.timeline__item {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  display: flex;
+  gap: 20px;
+  padding: 26px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+}
+
+/* diagonal sheen sweep — same effect used on the Projects cards */
+.timeline__item::before,
+.cert-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+          100deg,
+          transparent,
+          rgba(70, 232, 224, 0.14),
+          transparent
+  );
+  transform: translateX(-120%);
+  transition: transform 0.7s ease-out;
+  pointer-events: none;
+}
+
+.timeline__item:hover::before,
+.cert-card:hover::before {
+  transform: translateX(120%);
+}
+
+.timeline__marker {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--magenta);
+  box-shadow: 0 0 10px 2px rgba(255, 95, 162, 0.55);
+  margin-top: 8px;
+  flex-shrink: 0;
+}
+
+.timeline__role {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+}
+
+.timeline__company {
+  margin-top: 4px;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--cyan);
+}
+
+.timeline__points {
+  margin: 14px 0 0;
+  padding-left: 18px;
+  color: var(--text-dim);
+}
+
+.timeline__points li {
+  margin-bottom: 6px;
+  font-size: 0.92rem;
+}
+
+.cert-heading {
+  margin-top: 90px;
+  font-size: clamp(1.4rem, 2.4vw, 1.8rem);
+  color: var(--text-primary);
+}
+
+.cert-grid {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+.cert-card {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 20px 20px 22px;
+  background: var(--panel);
+  transition: transform 0.25s, border-color 0.25s;
+}
+
+.cert-card:hover {
+  transform: translateY(-3px);
+}
+
+.cert-card h4 {
+  margin-top: 12px;
+  font-size: 0.98rem;
+  color: var(--text-primary);
+  font-family: var(--font-display);
+  font-weight: 500;
+}
+
+.cert-card__issuer {
+  margin-top: 6px;
+  font-size: 0.8rem;
+  color: var(--text-dim);
+}
+
+.cert-card__detail {
+  margin-top: 10px;
+  font-size: 0.76rem;
+  color: var(--text-faint);
+}
+
+.cert-card__status {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 3px 9px;
+  border-radius: 999px;
+  display: inline-block;
+}
+
+.cert-card--done {
+  border-color: rgba(70, 232, 224, 0.3);
+}
+.cert-card--done .cert-card__status {
+  color: var(--cyan);
+  background: rgba(70, 232, 224, 0.1);
+}
+
+.cert-card--in-progress .cert-card__status {
+  color: var(--amber);
+  background: rgba(255, 180, 84, 0.12);
+}
+
+.cert-card--planned {
+  opacity: 0.65;
+}
+.cert-card--planned .cert-card__status {
+  color: var(--text-faint);
+  background: rgba(139, 124, 246, 0.06);
+}
