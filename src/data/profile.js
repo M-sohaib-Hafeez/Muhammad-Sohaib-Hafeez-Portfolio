@@ -259,6 +259,8 @@ export const certifications = [
   {
     name: 'Start Writing Prompt Like a Pro',
     issuer: 'Google / Coursera',
+    detail:
+      'Individual Course',
     status: 'done',
   },
   {
