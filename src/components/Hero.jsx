@@ -104,7 +104,7 @@ export default function Hero() {
             GET_IN_TOUCH
           </button>
           <a
-            href="/Muhammad_Sohaib_Hafeez_Resume"
+            href="/Muhammad_Sohaib_Hafeez_Resume.pdf"
             download
             className="flex items-center gap-2 rounded-lg border border-line px-6 py-3 font-mono text-xs font-medium tracking-wide text-ghost transition-colors hover:border-plasma hover:text-plasma"
           >
