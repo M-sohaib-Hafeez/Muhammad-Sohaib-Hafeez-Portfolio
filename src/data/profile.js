@@ -266,7 +266,7 @@ export const certifications = [
     issuer: 'Google / Coursera',
     detail:
       '9 Courses Series',
-    status: 'In-progress',
+    status: 'in-progress',
   },
   {
     name: 'Google Advanced Data Analytics Professional Certificate',
