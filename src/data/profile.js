@@ -250,34 +250,23 @@ export const certifications = [
     status: 'done',
   },
   {
-    name: 'AI for Brainstorming and Planning',
+    name: 'Google AI',
     issuer: 'Google / Coursera',
+    detail:
+        '7 courses: AI Fundamentals, AI for Brainstorming and Planning, AI for Research and Insights, AI for Writing and Communicating, AI for Content Creation, AI for Data Analysis, AI for App Building',
     status: 'done',
   },
   {
-    name: 'AI for Research and Insights',
+    name: 'Start Writing Prompt Like a Pro',
     issuer: 'Google / Coursera',
     status: 'done',
-  },
-  {
-    name: 'AI for Content Creation',
-    issuer: 'Google / Coursera',
-    status: 'in-progress',
-  },
-  {
-    name: 'AI for Data Analysis',
-    issuer: 'Google / Coursera',
-    status: 'in-progress',
-  },
-  {
-    name: 'AI for App Building',
-    issuer: 'Google / Coursera',
-    status: 'in-progress',
   },
   {
     name: 'Google Data Analytics Professional Certificate',
     issuer: 'Google / Coursera',
-    status: 'planned',
+    detail:
+      '9 Courses Series',
+    status: 'In-progress',
   },
   {
     name: 'Google Advanced Data Analytics Professional Certificate',
