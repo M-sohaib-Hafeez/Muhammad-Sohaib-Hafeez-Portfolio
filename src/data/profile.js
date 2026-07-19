@@ -137,7 +137,7 @@ export const projects = [
     ],
     tech: ['React', 'Vite', 'FastAPI', 'Supabase', 'WebSockets'],
     github: 'https://github.com/M-sohaib-Hafeez/ml-monitor',
-    live: 'https://ml-monitor-seven.vercel.app',
+    live: null,
     signal: 88,
     category: 'AI',
   },
