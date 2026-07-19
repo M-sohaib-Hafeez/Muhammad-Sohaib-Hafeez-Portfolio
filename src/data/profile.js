@@ -226,6 +226,23 @@ export const projects = [
     signal: 69,
     category: 'Systems',
   },
+  {
+    id: 'student-loan-system',
+    name: 'Student Loan Management System',
+    tagline: 'A JavaFX desktop platform modeling peer-to-pool student lending.',
+    description:
+        'A two-application JavaFX + MySQL system built around a shared lending pool: investors contribute funds, borrowers apply for loans against that pool, and a separate admin dashboard handles approvals, fund allocation, and repayment tracking. Every wallet-affecting action — deposits, withdrawals, disbursements, repayments, payouts — flows through a shared transaction ledger, and interest is distributed back to investors based on their share of the funding pool.',
+    highlights: [
+      'Two standalone JavaFX apps (User + Admin) sharing one MySQL database',
+      'Interest distribution engine pays investors by their share of the pool',
+      'Full audit trail on every wallet transaction and admin action',
+    ],
+    tech: ['Java', 'JavaFX', 'MySQL', 'Maven'],
+    github: 'https://github.com/M-sohaib-Hafeez/Student_Loan_Management_System',
+    live: null,
+    signal: 79,
+    category: 'Systems',
+  },
 ];
 
 export const experience = [
