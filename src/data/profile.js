@@ -243,6 +243,23 @@ export const projects = [
     signal: 79,
     category: 'Systems',
   },
+  {
+    id: 'ai-notes-analyzer',
+    name: 'KeepTask Analyzer',
+    tagline: 'An AI app that reads your notes and tells you what to actually do.',
+    description:
+        "An Android app that imports Google Keep–style notes (including real Takeout exports) and sends them to Gemini to surface the actionable tasks buried inside — deadlines, chores, health goals, finance to-dos — instead of just repeating note text. Extracted tasks are matched to a High/Medium/Low priority using the user's own custom keyword tags plus urgency cues, then queued for review before landing on a categorized daily checklist.",
+    highlights: [
+      'AI task extraction via Gemini, reviewed before committing to the checklist',
+      'Custom priority keyword system (e.g. #asap, #exam) drives AI urgency tagging',
+      'Fully offline — Room-backed local storage, no account or cloud sync needed',
+    ],
+    tech: ['Kotlin', 'Jetpack Compose', 'Gemini API', 'Room', 'MVVM'],
+    github: 'https://github.com/M-sohaib-Hafeez/Ai_Notes_Analyzer',
+    live: null,
+    signal: 83,
+    category: 'AI',
+  },
 ];
 
 export const experience = [
