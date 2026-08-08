@@ -260,6 +260,57 @@ export const projects = [
     signal: 83,
     category: 'AI',
   },
+  {
+    id: 'face-attendance-system',
+    name: 'Face Recognition Attendance System',
+    tagline: 'A desktop app that takes attendance by recognizing faces on a webcam feed.',
+    description:
+        "A Tkinter desktop app built for a real class roster: point a webcam at the room and anyone already enrolled gets logged automatically, no roll call needed. It runs entirely locally — face encodings, photos, and student data all stay on-device via SQLite, with no server or cloud upload — which matters since the roster holds real students' contact details. Unrecognized faces land in a review queue to be matched to a roster entry or named as a guest, and attendance logs export cleanly to Excel or PDF.",
+    highlights: [
+      'Live webcam recognition with color-coded bounding boxes (known vs. unknown)',
+      'Unknown-face review queue — name once, recognized from then on',
+      'One-click attendance export to Excel or PDF, filterable by date',
+    ],
+    tech: ['Python', 'Tkinter', 'OpenCV', 'dlib', 'face_recognition', 'SQLite'],
+    github: 'https://github.com/M-sohaib-Hafeez/Face-Attendance-System',
+    live: null,
+    signal: 85,
+    category: 'AI',
+  },
+  {
+    id: 'Ai-pdf-analyzer',
+    name: 'PDF Insight Analyzer',
+    tagline: 'Turns any PDF into a citation-grounded, persona-tailored analysis.',
+    description:
+        'A multimodal document intelligence app that runs uploaded PDFs through Gemini to produce executive summaries (tailored to four reader personas — Executive, Academic, Plain English, or Legal & Compliance), editable extracted tables with live charts, an action-items checklist, and a grounded Q&A chat — every insight traced back to a page-and-paragraph citation. Batch uploads get an automatic cross-document comparison on top of the per-document breakdowns, and the whole workspace exports to Markdown, CSV, or print-ready PDF.',
+    highlights: [
+      'Four persona lenses re-synthesize the same summary without re-running extraction',
+      'Every insight, table, and action item carries a page-level citation',
+      'Batch mode auto-generates a cross-document comparative matrix',
+    ],
+    tech: ['React', 'TypeScript', 'Express', 'Gemini API', 'Recharts'],
+    github: 'https://github.com/M-sohaib-Hafeez/Ai-Pdf-Analyzer',
+    live: null,
+    signal: 87,
+    category: 'AI',
+  },
+  {
+    id: 'skyline-weather-app',
+    name: 'Skyline Weather',
+    tagline: 'A weather app whose illustrated sky actually shifts with the time of day.',
+    description:
+        'A Flask weather app wrapped in a hand-illustrated scene — sun, clouds, hills, and trees — that transitions to a starlit night in dark mode. Search any city for real-time conditions plus a 5-day forecast, built by grouping OpenWeatherMap\'s 3-hour forecast steps into daily min/max readings and converting sunrise/sunset into each city\'s local time. The API key never reaches the browser — Flask proxies every request server-side.',
+    highlights: [
+      'Illustrated scene swaps sun → moon and fades in a starfield on theme toggle',
+      'Emoji-based condition icons — no external icon requests, never break',
+      'Server-side API proxy keeps the OpenWeatherMap key out of the browser',
+    ],
+    tech: ['Python', 'Flask', 'OpenWeatherMap API', 'JavaScript'],
+    github: 'https://github.com/M-sohaib-Hafeez/Weather-App',
+    live: null,
+    signal: 76,
+    category: 'Web Platform',
+  },
 ];
 
 export const experience = [
