@@ -311,6 +311,23 @@ export const projects = [
     signal: 76,
     category: 'Web Platform',
   },
+  {
+    id: 'to-do-application',
+    name: 'The Daily Ledger',
+    tagline: 'A to-do list styled as a ruled paper notebook, not a generic app.',
+    description:
+        "A Flask front end wrapped around a console to-do app, redesigned as a stationery-style ledger — light blue ruled paper, a maroon header, yellow accents. Tasks persist to a local JSON file through a small REST API (add, toggle-complete, delete) so the list survives a server restart without needing a database. A delete action was added on top of the original console app's four commands, since it's the natural web equivalent of clearing a finished line item.",
+    highlights: [
+      'REST API (`/api/tasks`) backs add, toggle, and delete actions',
+      'Ledger/notebook visual theme instead of a generic to-do UI',
+      'Task text validated server-side (non-empty, 200-char cap)',
+    ],
+    tech: ['Python', 'Flask', 'JavaScript', 'JSON'],
+    github: 'https://github.com/M-sohaib-Hafeez/To-Do-Application',
+    live: null,
+    signal: 68,
+    category: 'Web Platform',
+  },
 ];
 
 export const experience = [
@@ -324,6 +341,7 @@ export const experience = [
       'Built features for a React-based Expense Tracker application.',
     ],
   },
+
 ];
 
 export const certifications = [
