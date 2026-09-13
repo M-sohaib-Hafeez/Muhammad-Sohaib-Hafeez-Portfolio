@@ -295,6 +295,23 @@ export const projects = [
     category: 'AI',
   },
   {
+    id: 'raahnuma-ai',
+    name: 'Raahnuma.AI',
+    tagline: 'A trip-safety co-pilot for Pakistan\'s northern destinations.',
+    description:
+        "A hackathon-born trip-planning platform for travel to Pakistan's north — I have built the full FastAPI backend (Groq as primary LLM with Gemini fallback, async SQLAlchemy + PostgreSQL, JWT auth, live weather grounding) while his teammate built the Next.js frontend. The app turns a chosen destination and points of interest into an AI-grounded safety brief and packing checklist, then surfaces a trip-aware gear marketplace — filtered to what that trip's activities and weather actually call for — with cash-on-delivery ordering. A community trail-report feed and an SOS share flow round out the safety layer.",
+    highlights: [
+      'Groq → Gemini fallback chain keeps AI safety guidance available even if one provider fails',
+      'Marketplace ranks gear by the active trip\'s places + activity tags, not a generic catalogue',
+      'Live on Vercel + Render — deployed, working production app, not just a hackathon demo',
+    ],
+    tech: ['FastAPI', 'PostgreSQL', 'Groq', 'Gemini', 'Next.js', 'TypeScript', 'Redux Toolkit'],
+    github: 'https://github.com/AnoshaHafeez/Raahnuma.AI',
+    live: 'https://raahnuma-ai-one.vercel.app/',
+    signal: 90,
+    category: 'AI',
+  },
+  {
     id: 'skyline-weather-app',
     name: 'Skyline Weather',
     tagline: 'A weather app whose illustrated sky actually shifts with the time of day.',
